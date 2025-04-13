@@ -8,7 +8,7 @@ import { initSwiper } from "../components/swiper.js";
  * @param {string} idParam - Название параметра, используемое для создания ссылок на страницы с деталями контента.
  * @returns {Promise} Объект Promise.
  */
-export const cardsTemplate = async (endpoint, containerSelector, idParam) => {
+export const cardsTemplate = async (endpoint, containerSelector, idParam, results) => {
   results.forEach((content) => {
     const div = document.createElement("div");
 
